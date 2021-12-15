@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Zadanie 8 - jQuery</title>
+    <style type="text/css">
+        #box{
+            background-color: crimson;
+            color:white;
+            display: none;
+            border-radius: 20px;
+            border: 2px solid black;
+            width: 200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            $("#show").click(function(){
+                $("#box").show();
+            });
+            $("#hide").click(function(){
+                $("#box").hide();
+            });
+        });
+    </script>
+</head>
+<body bgcolor="wheat">
+    <button id="show">POKAZ</button>
+    <button id="hide">UKRYJ</button>
+    <div id="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatem consectetur ducimus voluptatum, molestiae consequatur magnam, iste vel, eum sequi quas harum quibusdam. Qui magnam vel exercitationem omnis suscipit ipsa.
+    </div>
+</body>
+</html>
