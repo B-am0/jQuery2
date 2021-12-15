@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>cwiczenie4 - jQuery</title>
+    <style type="text/css">
+        div{
+            color:white;
+            background-color: purple;
+            border-radius: 20px;
+            width: 125px;
+            height: 75px;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div><h2>ELO ŻELO</h2></div>
+    <script type="text/javascript">
+        $("div").hover(function(){
+            $(this).animate({width:"+=50px"});
+            $(this).animate({height:"+=50px"});
+            $(this).animate({width:"+=50px"});
+        },function(){
+            $(this).animate({width:"-=100px"});
+            $(this).animate({height:"-=50px"});
+        });
+    </script>
+</body>
+</html>
