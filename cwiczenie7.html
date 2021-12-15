@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Cwiczenie 7 - jquery</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#przycisk1").click(function(){
+                $("#napis1").text("My o tym doskonale wiemy...");
+            });
+            $("#przycisk2").click(function(){
+                $("#napis2").html("<h1> w istoie TAK <h1/>");
+            });
+            $("#przycisk3").click(function(){
+                $("#napis3").val("i umnie jest jQuery...");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="napis1">To są zajecia z cyklu ja chce jeszcze wiecej...</p>
+    <p id="napis2">To jest wielkie szczescie poznac jQuery w Samochodowce</p>
+    <p>
+        Pole: <input type="text" id="napis3" value="2CT to spoko ziomale"/>
+    </p>
+    <button id="przycisk1">Wyslij TEXT - tekst</button>
+    <button id="przycisk2">Wyslij HTML</button>
+    <button id="przycisk3">Wyslij wartosc - value</button>
+</body>
+</html>
